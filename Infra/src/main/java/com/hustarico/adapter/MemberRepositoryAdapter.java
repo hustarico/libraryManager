@@ -5,11 +5,12 @@ import com.hustarico.model.Member;
 import com.hustarico.port.MemberRepository;
 import com.hustarico.repository.SpringDataMemberRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
-
+@Repository
 @RequiredArgsConstructor
 public class MemberRepositoryAdapter implements MemberRepository {
 

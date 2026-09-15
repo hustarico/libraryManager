@@ -13,6 +13,8 @@
         <module>domain</module>
         <module>application</module>
         <module>Infra</module>
+        <module>presentation</module>
+        <module>boot</module>
     </modules>
 
     <properties>

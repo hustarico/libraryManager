@@ -5,11 +5,12 @@ import com.hustarico.model.Book;
 import com.hustarico.port.BookRepository;
 import com.hustarico.repository.SpringDataBookRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
-
+@Repository
 @RequiredArgsConstructor
 public class BookRepositoryAdapter implements BookRepository {
 

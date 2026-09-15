@@ -21,6 +21,8 @@ public class BookService {
     public Book save(String title, String author, int yearOfPublication, BookStatus status, Long borrowerId){
         return bookRepository.save(new Book(null, title , author, yearOfPublication ,status , borrowerId));
     }
+
+    //creates new book as available
     public Book addBook(String title, String author, int yearOfPublication){
         return save(title , author, yearOfPublication ,BookStatus.AVAILABLE , null);
     }
